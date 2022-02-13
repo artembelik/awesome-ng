@@ -11,6 +11,12 @@
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
 		"sourceMap": true,
+		"paths": {
+			"ang-let": [
+				"dist/ang-let/ang-let",
+				"dist/ang-let"
+			]
+		},
 		"declaration": false,
 		"downlevelIteration": true,
 		"experimentalDecorators": true,
