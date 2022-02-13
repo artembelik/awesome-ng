@@ -7,7 +7,7 @@
 		"typescript"
 	],
 	"repository": "https://github.com/artembelik/awesome-ng",
-	"homepage": "https://github.com/artembelik/awesome-ng/projects/ang-let",
+	"homepage": "https://github.com/artembelik/awesome-ng/tree/master/projects/ang-let",
 	"author": "Artem Belik",
 	"license": "MIT",
 	"private": false,
