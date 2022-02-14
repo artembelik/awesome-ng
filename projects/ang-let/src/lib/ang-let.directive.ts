@@ -1,10 +1,25 @@
 import { Directive, Inject, Input, TemplateRef, ViewContainerRef } from '@angular/core';
-import { AngLetContext } from './ang-let-context';
+
+/** @internal */
+class AngLetContext<T = unknown> {
+	constructor(
+		private readonly angLetDirective: AngLetDirective<T>,
+	) {
+	}
+
+	get $implicit(): T {
+		return this.angLetDirective.angLet;
+	}
+
+	get angLet(): T {
+		return this.angLetDirective.angLet;
+	}
+}
 
 @Directive({
 	selector: '[angLet]',
 })
-export class AngLetDirective<T> {
+export class AngLetDirective<T = unknown> {
 	@Input() angLet!: T;
 
 	constructor(
@@ -17,10 +32,12 @@ export class AngLetDirective<T> {
 		);
 	}
 
+	static ngTemplateGuard_angLet: 'binding';
+
 	static ngTemplateContextGuard<T>(
 		dir: AngLetDirective<T>,
-		ctx: any,
-	): ctx is AngLetDirective<T> {
+		ctx: unknown,
+	): ctx is AngLetContext<T> {
 		return true;
 	}
 }
