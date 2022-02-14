@@ -1,9 +1,10 @@
 # ang-let
 
+[![Demo](https://img.shields.io/badge/demo-stackblitz-green)](https://img.shields.io/badge/demo-stack-green)
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/let.svg)](https://npmjs.com/package/@awesome-ng/let)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-`*angLet` works like `*ngIf` but does not have a condition. Use it to declare/reuse computed value in several places in template to avoid pipes (async, etc) recalculations .
+`*angLet` works like `*ngIf` but does not have a condition. Use it to declare/reuse computed value in several places in template to avoid pipes (async, etc) recalculations.
 
 # Installation:
 ## Install with npm:
