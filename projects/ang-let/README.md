@@ -1,6 +1,6 @@
 # ang-let
 
-[![Demo](https://img.shields.io/badge/demo-stackblitz-green)](https://img.shields.io/badge/demo-stack-green)
+[![Demo](https://img.shields.io/badge/demo-stackblitz-green)](https://stackblitz.com/edit/ang-let)
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/let.svg)](https://npmjs.com/package/@awesome-ng/let)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
