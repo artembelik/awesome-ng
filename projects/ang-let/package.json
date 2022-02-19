@@ -1,6 +1,7 @@
 {
 	"name": "@awesome-ng/let",
-	"version": "0.0.3",
+	"version": "0.0.4",
+	"description": "`*angLet` - is a structural directive that works like `*ngIf` but doesn't have a condition. Use it to declare/reuse computed values in multiple places in your template. It helps to avoid values recalculations (e.g pipes/observables/getters).",
 	"keywords": [
 		"angular",
 		"directive",
@@ -12,8 +13,7 @@
 	"license": "MIT",
 	"private": false,
 	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org/"
+		"access": "public"
 	},
 	"peerDependencies": {
 		"@angular/common": "^13.2.0",
