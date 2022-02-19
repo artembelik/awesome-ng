@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.4
+
+- add specs
+
 ## v0.0.3
 
 - add changelog

@@ -3,7 +3,7 @@ import { Directive, Inject, Input, TemplateRef, ViewContainerRef } from '@angula
 /** @internal */
 class AngLetContext<T = unknown> {
 	constructor(
-		private readonly angLetDirective: AngLetDirective<T>,
+		private angLetDirective: AngLetDirective<T>,
 	) {
 	}
 
@@ -16,6 +16,19 @@ class AngLetContext<T = unknown> {
 	}
 }
 
+/**
+ * `*angLet` - is a structural directive that works like `*ngIf` but doesn't have a condition.
+ * Use it to declare/reuse computed values in multiple places in your template.
+ * It helps to avoid values recalculations (e.g pipes/observables/getters).
+ *
+ * ```
+ * <ng-template *angLet="observable$ | async as value">
+ *     <h1>{{ value }}</h1>
+ *     <h2>{{ value }}</h2>
+ *     ...
+ * </ng-template>
+ * ```
+ */
 @Directive({
 	selector: '[angLet]',
 })
@@ -32,8 +45,22 @@ export class AngLetDirective<T = unknown> {
 		);
 	}
 
+	/**
+	 * Assert the correct type of the expression bound to the `angLet` input within the template.
+	 *
+	 * The presence of this static field is a signal to the Ivy template type check compiler that
+	 * when the `AngLetDirective` structural directive renders its template, the type of the expression bound
+	 * to `angLet` should be narrowed in some way. For `AngLetDirective`, the binding expression itself is used to
+	 * narrow its type, which allows the strictNullChecks feature of TypeScript to work with `angLet`.
+	 */
 	static ngTemplateGuard_angLet: 'binding';
 
+	/**
+	 * Asserts the correct type of the context for the template that `angLet` will render.
+	 *
+	 * The presence of this method is a signal to the Ivy template type-check compiler that the
+	 * `AngLetDirective` structural directive renders its template with a specific context type.
+	 */
 	static ngTemplateContextGuard<T>(
 		dir: AngLetDirective<T>,
 		ctx: unknown,

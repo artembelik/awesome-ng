@@ -10,7 +10,7 @@
 			"projectType": "library",
 			"root": "projects/ang-let",
 			"sourceRoot": "projects/ang-let/src",
-			"prefix": "lib",
+			"prefix": "ang",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
@@ -37,6 +37,5 @@
 				}
 			}
 		}
-	},
-	"defaultProject": "ang-let"
+	}
 }

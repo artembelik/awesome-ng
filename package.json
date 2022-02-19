@@ -10,13 +10,10 @@
 	"license": "MIT",
 	"private": false,
 	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org/"
+		"access": "public"
 	},
 	"scripts": {
 		"ng": "ng",
-		"start": "ng serve",
-		"test": "ng test",
 		"build:prod": "ng build --configuration production"
 	},
 	"dependencies": {
