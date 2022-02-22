@@ -14,7 +14,8 @@
 	},
 	"scripts": {
 		"ng": "ng",
-		"build:prod": "ng build --configuration production"
+		"build:prod": "ng build --configuration production",
+		"build:prod:ang-let": "ng build --project ang-let --configuration production"
 	},
 	"dependencies": {
 		"@angular/animations": "~13.2.0",

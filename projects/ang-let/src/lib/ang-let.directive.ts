@@ -1,4 +1,4 @@
-import { Directive, Inject, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 /** @internal */
 class AngLetContext<T = unknown> {
@@ -17,10 +17,7 @@ class AngLetContext<T = unknown> {
 }
 
 /**
- * `*angLet` - is a structural directive that works like `*ngIf` but doesn't have a condition.
- * Use it to declare/reuse computed values in multiple places in your template.
- * It helps to avoid values recalculations (e.g pipes/observables/getters).
- *
+ * Simple structural directive for declaring and sharing data as local variables in angular template.
  * ```
  * <ng-template *angLet="observable$ | async as value">
  *     <h1>{{ value }}</h1>
@@ -36,8 +33,8 @@ export class AngLetDirective<T = unknown> {
 	@Input() angLet!: T;
 
 	constructor(
-		@Inject(ViewContainerRef) viewContainerRef: ViewContainerRef,
-		@Inject(TemplateRef) templateRef: TemplateRef<AngLetContext<T>>,
+		private viewContainerRef: ViewContainerRef,
+		templateRef: TemplateRef<AngLetContext<T>>,
 	) {
 		viewContainerRef.createEmbeddedView(
 			templateRef,

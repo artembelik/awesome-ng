@@ -3,11 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/let.svg?color=success)](https://npmjs.com/package/@awesome-ng/let)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?color=blue)](./../../LICENSE)
 
-### `*angLet` - is a structural directive that works like `*ngIf` but doesn't have a condition.
-
-### Use it to declare/reuse computed values in multiple places in your template.
-
-### It helps to avoid values recalculations (e.g pipes/observables/getters).
+### Simple structural directive for declaring and sharing data as local variables in angular template.
 
 ### [StackBlitz demo](https://stackblitz.com/edit/ang-let)
 
@@ -21,7 +17,7 @@ npm i @awesome-ng/let --save-dev
 
 # Setup:
 
-### Import `AngLetModule` into a module where you want to use `*angLet`:
+### Import `AngLetModule` into a module where you want to use `*angLet` directive:
 
 ```
 import { AngLetModule } from '@awesome-ng/let';
@@ -31,10 +27,10 @@ import { AngLetModule } from '@awesome-ng/let';
 })
 ```
 
-### Add `*angLet` to the template:
+### Use `*angLet` directive in your template:
 
 ```
-<ng-template *angLet="observable$ | async as value">
+<ng-template *angLet="observable$ | async as value"> <!-- single subscription -->
     <h1>{{ value }}</h1>
     <h2>{{ value }}</h2>
     ...
