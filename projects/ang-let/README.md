@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/let.svg?color=success)](https://npmjs.com/package/@awesome-ng/let)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?color=blue)](./../../LICENSE)
 
-### Simple structural directive for declaring and sharing data as local variables in angular template.
+### Simple structural directive for declaring and sharing data as local variable in angular template.
 
 ### [StackBlitz demo](https://stackblitz.com/edit/ang-let)
 
