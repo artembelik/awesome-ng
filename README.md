@@ -1,5 +1,6 @@
 # awesome-ng
 
+[![Build](https://github.com/artembelik/awesome-ng/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/artembelik/awesome-ng/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?color=blue)](./LICENSE)
 
 | Package                                                                                  | Version                                                                                                                     |
