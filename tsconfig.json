@@ -10,8 +10,13 @@
 		"noPropertyAccessFromIndexSignature": true,
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
 		"sourceMap": true,
 		"paths": {
+			"ang-destroy": [
+				"dist/ang-destroy/ang-destroy",
+				"dist/ang-destroy"
+			],
 			"ang-let": [
 				"dist/ang-let/ang-let",
 				"dist/ang-let"
