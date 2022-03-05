@@ -1,5 +1,6 @@
 # @awesome-ng/let
 
+[![AngLetBuild](https://github.com/artembelik/awesome-ng/actions/workflows/ang-let-build.yml/badge.svg)](https://github.com/artembelik/awesome-ng/actions/workflows/ang-let-build.yml)
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/let.svg?color=success)](https://npmjs.com/package/@awesome-ng/let)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?color=blue)](./../../LICENSE)
 
