@@ -17,7 +17,7 @@ class AngLetContext<T = unknown> {
 }
 
 /**
- * Simple structural directive for declaring and sharing data as local variable in angular template.
+ * Simple angular structural directive for declaring and sharing data as local variable in template.
  * ```
  * <ng-template *angLet="observable$ | async as value">
  *     <h1>{{ value }}</h1>

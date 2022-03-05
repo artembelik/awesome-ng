@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/let.svg?color=success)](https://npmjs.com/package/@awesome-ng/let)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?color=blue)](./../../LICENSE)
 
-### Simple structural directive for declaring and sharing data as local variable in angular template.
+### Simple angular structural directive for declaring and sharing data as local variable in template.
 
 ### [StackBlitz demo](https://stackblitz.com/edit/ang-let)
 
@@ -19,20 +19,21 @@ npm i @awesome-ng/let --save-dev
 
 ### Import `AngLetModule` into a module where you want to use `*angLet` directive:
 
-```
+```typescript
 import { AngLetModule } from '@awesome-ng/let';
 
 @NgModule({
-  imports: [AngLetModule],
+	imports: [AngLetModule],
 })
 ```
 
 ### Use `*angLet` directive in your template:
 
-```
+```angular2html
+
 <ng-template *angLet="observable$ | async as value"> <!-- single subscription -->
-    <h1>{{ value }}</h1>
-    <h2>{{ value }}</h2>
-    ...
+	<h1>{{ value }}</h1>
+	<h2>{{ value }}</h2>
+	...
 </ng-template>
 ```

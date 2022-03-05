@@ -1,7 +1,7 @@
 {
 	"name": "@awesome-ng/let",
-	"version": "1.0.0",
-	"description": "Simple structural directive for declaring and sharing data as local variable in angular template.",
+	"version": "1.0.1",
+	"description": "Simple angular structural directive for declaring and sharing data as local variable in template.",
 	"keywords": [
 		"angular",
 		"directive",
