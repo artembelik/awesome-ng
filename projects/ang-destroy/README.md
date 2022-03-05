@@ -1,5 +1,6 @@
 # @awesome-ng/destroy
 
+[![AngDestroyBuild](https://github.com/artembelik/awesome-ng/actions/workflows/ang-destroy-build.yml/badge.svg)](https://github.com/artembelik/awesome-ng/actions/workflows/ang-destroy-build.yml)
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/destroy.svg?color=success)](https://npmjs.com/package/@awesome-ng/destroy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?color=blue)](./../../LICENSE)
 
