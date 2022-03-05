@@ -1,5 +1,8 @@
-name: @awesome-ng/destroy build
-on: push
+name: AngDestroyBuild
+on:
+  push:
+    paths:
+      - 'projects/ang-destroy/**'
 jobs:
   build:
     runs-on: ubuntu-latest

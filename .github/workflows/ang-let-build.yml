@@ -1,9 +1,8 @@
-<<<<<<<< HEAD:.github/workflows/app-build.yml
-name: AppBuild
-========
-name: @awesome-ng/let build
->>>>>>>> 2925707 (workflow build update):.github/workflows/ang-let-build.yml
-on: push
+name: AngLetBuild
+on:
+  push:
+    paths:
+      - 'projects/ang-let/**'
 jobs:
   build:
     runs-on: ubuntu-latest
