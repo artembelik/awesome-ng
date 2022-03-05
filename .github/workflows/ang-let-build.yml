@@ -1,4 +1,4 @@
-name: Build
+name: AngLetBuild
 on: push
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
         run: npm ci
 
       - name: Test
-        run: npm run test:ci
+        run: npm run test:ci ang-let
 
       - name: Build
-        run: npm run build:prod
+        run: npm run build:prod --project ang-let

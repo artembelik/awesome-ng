@@ -15,8 +15,6 @@
 	"scripts": {
 		"ng": "ng",
 		"build:prod": "ng build --configuration production",
-		"build:prod:ang-let": "npm run build:prod --project ang-let",
-		"build:prod:ang-destroy": "npm run build:prod --project ang-destroy",
 		"test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI"
 	},
 	"dependencies": {
