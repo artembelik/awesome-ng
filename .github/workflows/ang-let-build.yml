@@ -1,4 +1,8 @@
-name: AngLetBuild
+<<<<<<<< HEAD:.github/workflows/app-build.yml
+name: AppBuild
+========
+name: @awesome-ng/let build
+>>>>>>>> 2925707 (workflow build update):.github/workflows/ang-let-build.yml
 on: push
 jobs:
   build:
