@@ -1,4 +1,4 @@
-name: AngDestroyBuild
+name: '@awesome-ng/destroy'
 on:
   push:
     paths:
