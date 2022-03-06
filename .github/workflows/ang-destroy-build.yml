@@ -1,4 +1,4 @@
-name: '@awesome-ng/destroy'
+name: '@awesome-ng/destroy build'
 on:
   push:
     paths:
