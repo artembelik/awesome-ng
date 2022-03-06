@@ -1,6 +1,6 @@
 {
 	"name": "@awesome-ng/destroy",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Simple angular service, which help to complete subscriptions after component/directive destroy.",
 	"keywords": [
 		"angular",
