@@ -1,4 +1,4 @@
-name: '@awesome-ng/let'
+name: '@awesome-ng/let build'
 on:
   push:
     paths:
