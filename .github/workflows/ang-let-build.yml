@@ -1,4 +1,4 @@
-name: AngLetBuild
+name: '@awesome-ng/let'
 on:
   push:
     paths:
