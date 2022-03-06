@@ -1,6 +1,6 @@
 # @awesome-ng/let
 
-[![AngLetBuild](https://github.com/artembelik/awesome-ng/actions/workflows/ang-let-build.yml/badge.svg)](https://github.com/artembelik/awesome-ng/actions/workflows/ang-let-build.yml)
+[![@awesome-ng/let build](https://github.com/artembelik/awesome-ng/actions/workflows/ang-let-build.yml/badge.svg)](https://github.com/artembelik/awesome-ng/actions/workflows/ang-let-build.yml)
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/let.svg?color=success)](https://npmjs.com/package/@awesome-ng/let)
 
 ### Simple angular structural directive for declaring and sharing data as local variable in template.
