@@ -2,9 +2,10 @@
 
 [![AngDestroyBuild](https://github.com/artembelik/awesome-ng/actions/workflows/ang-destroy-build.yml/badge.svg)](https://github.com/artembelik/awesome-ng/actions/workflows/ang-destroy-build.yml)
 [![npm version](https://img.shields.io/npm/v/@awesome-ng/destroy.svg?color=success)](https://npmjs.com/package/@awesome-ng/destroy)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?color=blue)](./../../LICENSE)
 
 ### Simple angular service, which help to complete subscriptions after component/directive destroy.
+
+### [StackBlitz demo](https://stackblitz.com/edit/ang-destroy?devtoolsheight=50&file=src/app/app.component.ts)
 
 # Installation:
 

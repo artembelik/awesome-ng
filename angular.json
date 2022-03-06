@@ -41,7 +41,7 @@
 			"projectType": "library",
 			"root": "projects/ang-destroy",
 			"sourceRoot": "projects/ang-destroy/src",
-			"prefix": "lib",
+			"prefix": "ang",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
